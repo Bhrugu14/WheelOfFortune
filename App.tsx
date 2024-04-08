@@ -38,7 +38,9 @@ function App(): React.JSX.Element {
             setInfoModal(true);
           }}
           style={styles.infoButton}>
-          <Text style={{fontSize: 15, fontWeight: 'bold'}}>i</Text>
+          <Text style={{fontSize: 15, fontWeight: 'bold', color: 'grey'}}>
+            i
+          </Text>
         </Pressable>
         <Text style={styles.headerText}>{'Wheel Of Fortune'}</Text>
         <CircleWheel />
@@ -54,7 +56,12 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 10,
   },
-  headerText: {marginBottom: 20, fontSize: 20, fontWeight: 'bold'},
+  headerText: {
+    marginBottom: 20,
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'grey',
+  },
   infoButton: {
     position: 'absolute',
     top: 10,
@@ -63,7 +70,7 @@ const styles = StyleSheet.create({
     height: 30,
     width: 30,
     borderWidth: 1,
-    borderColor: 'black',
+    borderColor: 'grey',
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 100,

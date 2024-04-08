@@ -86,7 +86,12 @@ const styles = StyleSheet.create({
     color: 'green',
     textAlign: 'center',
   },
-  headerText: {fontSize: 15, fontWeight: 'bold', textAlign: 'center'},
+  headerText: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'grey',
+  },
 });
 
 export default WinnerModal;
